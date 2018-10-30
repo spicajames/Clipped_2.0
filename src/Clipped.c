@@ -611,6 +611,7 @@ static void handle_tap(AccelAxisType axis, int32_t direction) {
     createInfoLayer(BATTERY);
     app_timer_register(4000, destroyInfoLayer, NULL);
   }
+  light_enable_interaction();
 }
 
 
